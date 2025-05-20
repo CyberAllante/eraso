@@ -57,7 +57,6 @@ export const s3Uploader = async (
     Key: finalName,
     Body: fileBuffer,
     ContentType: file.type,
-    ACL: 'public-read' as any,
     ContentDisposition: `attachment; filename="${fileName}"`,
   };
 
